@@ -4,11 +4,157 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Loris Monteleone's English Portfolio</title>
+        <style>
+            :root {
+                --ink: #1f2937;
+                --muted: #6b7280;
+                --paper: #f8fafc;
+                --card-bg: #ffffff;
+                --accent: #a64b13;
+                --accent-hover: #82380b;
+                --border: #e2e8f0;
+                --shadow:
+                    0 4px 6px -1px rgba(0, 0, 0, 0.05),
+                    0 2px 4px -2px rgba(0, 0, 0, 0.05);
+                --shadow-hover:
+                    0 10px 15px -3px rgba(166, 75, 19, 0.15),
+                    0 4px 6px -4px rgba(166, 75, 19, 0.1);
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+                min-height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+                font-family: Arial, Helvetica, sans-serif;
+                color: var(--ink);
+                padding: 2rem 1rem;
+            }
+
+            .container {
+                width: min(520px, 100%);
+                background: var(--card-bg);
+                padding: 2.5rem 2rem;
+                border-radius: 16px;
+                box-shadow:
+                    0 20px 25px -5px rgba(0, 0, 0, 0.08),
+                    0 8px 10px -6px rgba(0, 0, 0, 0.04);
+                border: 1px solid var(--border);
+            }
+
+            .header {
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+
+            .label {
+                color: var(--accent);
+                font-size: 0.8rem;
+                font-weight: 700;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                margin: 0 0 0.5rem;
+            }
+
+            h1 {
+                margin: 0;
+                font-family: Georgia, "Times New Roman", serif;
+                font-size: clamp(1.6rem, 5vw, 2.2rem);
+                font-weight: 400;
+                color: var(--ink);
+            }
+
+            .links-grid {
+                display: flex;
+                flex-direction: column;
+                gap: 0.85rem;
+            }
+
+            .card-link {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 1rem 1.25rem;
+                background: var(--paper);
+                border: 1px solid var(--border);
+                border-radius: 10px;
+                text-decoration: none;
+                color: var(--ink);
+                font-weight: 600;
+                font-size: 0.98rem;
+                transition: all 0.2s ease-in-out;
+                box-shadow: var(--shadow);
+            }
+
+            .card-link:hover {
+                background: #ffffff;
+                border-color: var(--accent);
+                color: var(--accent);
+                transform: translateY(-2px);
+                box-shadow: var(--shadow-hover);
+            }
+
+            .card-link::after {
+                content: "→";
+                font-size: 1.1rem;
+                transition: transform 0.2s ease;
+            }
+
+            .card-link:hover::after {
+                transform: translateX(4px);
+            }
+
+            .badge {
+                font-size: 0.75rem;
+                background: #fff0df;
+                color: var(--accent);
+                padding: 0.2rem 0.6rem;
+                border-radius: 999px;
+                font-weight: bold;
+                margin-left: auto;
+                margin-right: 0.75rem;
+            }
+
+            footer {
+                margin-top: 2rem;
+                text-align: center;
+                font-size: 0.8rem;
+                color: var(--muted);
+            }
+        </style>
     </head>
     <body>
-        <h1>Loris Monteleone's English Portfolio</h1>
-        <p><a href="portfolio.html">Portfolio Template</a></p>
-        <p><a href="portfolio1.html">About me / Portfolio 1</a></p>
-        <p><a href="portfolio2.html">Portfolio 2</a></p>
+        <main class="container">
+            <header class="header">
+                <p class="label">TBZ Zürich · ICT English</p>
+                <h1>English Portfolio</h1>
+            </header>
+
+            <nav class="links-grid">
+                <a href="portfolio1.html" class="card-link">
+                    <span>About me / Entry 1</span>
+                </a>
+                <a href="portfolio2.html" class="card-link">
+                    <span>Entry 2</span>
+                </a>
+                <a
+                    href="portfolio.html"
+                    class="card-link"
+                    style="opacity: 0.85"
+                >
+                    <span>Portfolio Template</span>
+                </a>
+            </nav>
+
+            <footer>
+                <p>Loris Monteleone</p>
+            </footer>
+        </main>
     </body>
 </html>
