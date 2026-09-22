@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>English Portfolio - Portfolio Entry</title>
+        <style>
+            :root {
+                --ink: #263238;
+                --muted: #65737e;
+                --paper: #fffdf9;
+                --card: #ffffff;
+                --line: #e5ddd2;
+                --accent: #a64b13;
+                --accent-light: #fff0df;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+                color: var(--ink);
+                background: var(--paper);
+                font-family: Georgia, "Times New Roman", serif;
+                line-height: 1.7;
+            }
+
+            header {
+                padding: 3.5rem 1.5rem 4rem;
+                color: white;
+                background: linear-gradient(135deg, #713513, #b35b1b);
+            }
+
+            header > div,
+            main,
+            footer {
+                width: min(820px, 100%);
+                margin: 0 auto;
+            }
+
+            .label,
+            .date,
+            .tip {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .label {
+                margin: 0 0 0.5rem;
+                color: #fed7aa;
+                font-size: 0.8rem;
+                font-weight: bold;
+                letter-spacing: 0.12em;
+                text-transform: uppercase;
+            }
+
+            h1,
+            h2 {
+                line-height: 1.2;
+                font-weight: 400;
+            }
+
+            h1 {
+                margin: 0;
+                font-size: clamp(2.4rem, 7vw, 4.5rem);
+            }
+
+            header p:last-child {
+                max-width: 620px;
+                margin: 1rem 0 0;
+                color: #ffedd5;
+                font-size: 1.1rem;
+            }
+
+            main {
+                padding: 2rem 1.5rem 4rem;
+            }
+
+            .entry,
+            .info {
+                padding: clamp(1.25rem, 4vw, 2rem);
+                background: var(--card);
+                border: 1px solid var(--line);
+                border-radius: 12px;
+            }
+
+            .entry {
+                margin-bottom: 1.5rem;
+            }
+
+            .date {
+                margin: 0;
+                color: var(--muted);
+                font-size: 0.82rem;
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+            }
+
+            .tag {
+                display: inline-block;
+                margin-left: 0.6rem;
+                padding: 0.15rem 0.6rem;
+                color: var(--accent);
+                background: var(--accent-light);
+                border-radius: 999px;
+                font-weight: bold;
+            }
+
+            h2 {
+                margin: 0.7rem 0 1rem;
+                font-size: 2rem;
+            }
+
+            p {
+                margin: 0.8rem 0;
+            }
+
+            .reflection {
+                margin-top: 1.5rem;
+                padding: 1rem;
+                border-left: 3px solid var(--accent);
+                background: #fffbf5;
+            }
+
+            .info {
+                color: var(--muted);
+                font-size: 0.95rem;
+            }
+
+            .info h2 {
+                color: var(--ink);
+                font-size: 1.4rem;
+            }
+
+            footer {
+                padding: 0 1.5rem 2rem;
+                color: var(--muted);
+                font:
+                    0.8rem Arial,
+                    Helvetica,
+                    sans-serif;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div>
+                <p class="label">
+                    Technische Berufsschule Zürich · ICT English
+                </p>
+                <h1>English Portfolio</h1>
+                <p>Year 2 portfolio entry by Loris Monteleone</p>
+            </div>
+        </header>
+
+        <main>
+            <!-- Copy this file and rename it for your next portfolio entry. -->
+            <article class="entry">
+                <p class="date">
+                    Date: <time datetime="2026-09-22">22 September 2026</time>
+                    <span class="tag">Portfolio 3</span>
+                </p>
+
+                <p>
+                    <strong>Task:</strong> Take your time this week to finish
+                    working on the frame of your portfolio. Here is a small task
+                    to include, which should be medium-sized text (100-150
+                    words), written from the heart (not a generic story from
+                    ChatGpt), and personal to you. The title of this entry could
+                    be:
+                </p>
+
+                <p>
+                    <strong>The story of LFS</strong> I will write about how I
+                    installed LFS (Linux From Scratch). Linux From Scratch is
+                    basically an operating system that you build yourself. You
+                    won't need to code it yourself, but you will need to pick
+                    out the packages that you want/need. However, with Linux
+                    From Scratch, there is a guide that tells you exactly what
+                    you need and what there is to do. I started with the
+                    prerequisites list and learned about them. After that, I
+                    knew what a tarball is and how to unpack it. The next step
+                    was to prepare the host system for the LFS installation.
+                    After that, I needed to build all the necessary tools and
+                    then build the LFS system. After that, I needed to configure
+                    things about the system and compile the kernel. But uh-oh,
+                    in the next step, I needed to add the partition to GRUB and
+                    boot into it. Everything went well—I even saw the partition
+                    in the GRUB menu—but when selecting it, there was an error
+                    instead of the LFS installation. I tried to fix it and also
+                    went back to compiling the kernel, but it was no use. It
+                    just didn't work. I was a little bit sad, but not really,
+                    because I mostly picked this project to listen to podcasts
+                    without needing to think since in the process, there was a
+                    lot of compiling and waiting time where I was able to listen
+                    to the podcast.
+                </p>
+            </article>
+
+            <section class="info">
+                <h2>Sources and AI use</h2>
+                <p>
+                    I didn't use ai but here is the link to lfs:
+                    https://www.linuxfromscratch.org/
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            <p>Loris Monteleone · ICT English · TBZ Zürich</p>
+        </footer>
+    </body>
+</html>
